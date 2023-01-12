@@ -7,7 +7,7 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 const generateAction = async (req, res) => {
   // Run first prompt
-  console.log(`API: I want to talk to ${req.body.writer} about ${req.body.userInput}`)
+  console.log(`API: Write a conversation between ${req.body.writer} and me about ${req.body.userInput}.`)
 
   const baseCompletion = await openai.createCompletion({
     model: 'text-davinci-003',
