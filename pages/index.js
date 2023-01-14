@@ -46,12 +46,12 @@ const callGenerateEndpoint = async () => {
             <h1>ConvoPeep!</h1>
           </div>
           <div className="header-subtitle">
-            <h2>Use the power of GPT-3 to take a trip with a person you like about somwthing you like!</h2>
+            <h2>Use the power of GPT-3 to take a trip with a person you like about something you like!</h2>
           </div>
           {/* Add this code here*/}
         <div>
           <textarea 
-          placeholder='Writer you wanna talk to!'
+          placeholder='Person you wanna talk to'
           className='prompt-box'
           value={writer} 
           onChange = {onUserChangedWriter}
@@ -59,7 +59,7 @@ const callGenerateEndpoint = async () => {
         </div>
         <div className="prompt-container">
   <textarea
-    placeholder="start typing here"
+    placeholder="Something you wanna talk about..."
     className="prompt-box"
     value={userInput}
     onChange={onUserChangedText}
