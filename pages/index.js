@@ -6,11 +6,11 @@ const Home = () => {
   const [userInput, setUserInput] = useState('');
   const [writer, setwriter] = useState('');
   function onUserChangedText(event) {
-    console.log(event.target.value);
+    //console.log(event.target.value);
     setUserInput(event.target.value);
   }
   function onUserChangedWriter(event) {
-    console.log(event.target.value);
+    //console.log(event.target.value);
     setwriter(event.target.value);
   }
   const [apiOutput, setApiOutput] = useState('')
